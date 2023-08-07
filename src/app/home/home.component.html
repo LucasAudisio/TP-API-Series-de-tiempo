@@ -1,0 +1,4 @@
+<button *ngIf="!inicioSesion" (click)="goLogin()">Inicio sesion</button>
+<button *ngIf="!inicioSesion" (click)="goRegistro()">Registro</button>
+<button *ngIf="inicioSesion" (click)="cerrarSesion()">Cerrar Sesion</button>
+<button *ngIf="inicioSesion" (click)="goDatosGob()">Datos de la api</button>

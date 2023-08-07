@@ -1,0 +1,28 @@
+table {
+    width: 90%;
+    border-collapse: collapse;
+  }
+  
+  table th,
+  table td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid white;
+  }
+  
+  table th {
+    background-color: #227aa7;
+    font-weight: bold;
+  }
+  
+  table tr:nth-child(2n-1) {
+    background-color: rgb(63, 61, 61);
+  }
+  
+  table tr:nth-child(2n) {
+    background-color: rgb(105, 100, 100);
+  }
+  
+  table tr:hover {
+    background-color: #227aa7;
+  }

@@ -1,0 +1,29 @@
+<p>Fecha incio</p>
+<input [(ngModel)]="anioInicio" type="number" placeholder="Año">
+<input [(ngModel)]="mesInicio" type="number" placeholder="Mes">
+<input [(ngModel)]="diaInicio" type="number" placeholder="Dia">
+
+<p>Fecha final</p>
+<input [(ngModel)]="anioFinal" type="number" placeholder="Año">
+<input [(ngModel)]="mesFinal" type="number" placeholder="Mes">
+<input [(ngModel)]="diaFinal" type="number" placeholder="Dia">
+<br>
+<br>
+<button (click)="recibirDatos()">recibir</button>
+
+<p>{{error}}</p>
+
+<table *ngIf=seRecibio>
+    <thead>
+        <tr>
+            <th>Fecha</th>
+            <th>valor</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of datosTabla; let i = index" [attr.data-index]="i">
+            <td>{{datosTabla[i][0]}}</td>
+            <td>{{datosTabla[i][1]}}</td>
+        </tr>
+    </tbody>
+</table>
